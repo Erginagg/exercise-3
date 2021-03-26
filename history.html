@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!-- Meta setup -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="keywords" content="">
+        <meta name="decription" content="">
+        
+        <!-- Title -->
+        <title>Welcome</title>
+        
+        <!-- Fav Icon -->
+        <link rel="icon" href="images/favicon.ico" /> 
+
+        <!-- Main StyleSheet -->
+        <link rel="stylesheet" href="style.css" />   
+        
+    </head>
+    <body>
+        <!--[if lte IE 9]> <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p><![endif]-->
+
+       <!-- header-area start -->   
+        <header class="header-area">
+            <div class="container">
+                <div class="head-upper-log text-right">
+                   <a href="#">
+                        <img src="images/head-logo.png" alt="" class="img-fluid">
+                   </a>
+                </div>
+                <nav class="menu-area">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <a href="index.html">
+                                <img src="images/logo.png" alt="" class="img-fluid"/>
+                            </a>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="menu-item text-right">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="history.html" id="active">History</a></li>
+                                    <li><a href="choices.html">Choices</a></li>
+                                    <li><a href="events.html">Events</a></li>             
+                                    <li><a href="contact.html">Contact</a></li>        
+                                </ul>
+                            </div>
+                        </div>
+                    </div>           
+                </nav>              
+            </div>
+        </header>   
+        <!-- header-area end -->   
+
+        <!-- his-banner-area start --> 
+        <div class="his-banner-area">
+            <div class="container">
+               <div class="his-banner-item">
+                    <h4>The Island Of Afrodeta</h4>
+               </div>
+            </div>
+        </div>
+        <!-- his-banner-area end -->
+
+        <!-- history-part start -->
+        <div class="history-part">
+            <div class="container">
+                <div class="history-item">
+                    <ul>
+                        <li class="tm-1">
+                             <div class="history-upper">
+                                <h2>2.7 Million Years Ago</h2>
+                            </div>
+                        </li>
+                        <li class="tm-2">
+                            <div class="history-cont">
+                                <h4>Mythology</h4>
+                                <p id="myth">
+                                    </p>
+                                    <script>
+                                        fetch("main.json")
+                                        .then(response => response.json())
+                                        .then((data) => {
+                                            for(const history of data.history){
+                                            var output = document.getElementById("myth")
+                                            output.innerHTML = history.Mythology.Mythology_description;
+                                            }
+                                        })
+                                    </script>
+                            </div>
+                        </li>
+                        <li class="tm-3">
+                             <div class="history-cont">
+                                <h4>Ancient Times</h4>
+                                <p id="ancient"></p>
+                                <script>
+                                    fetch("main.json")
+                                    .then(response => response.json())
+                                    .then((data) => {
+                                        for(const history of data.history){
+                                        var output = document.getElementById("ancient")
+                                        output.innerHTML = history.Ancient_Times.Ancient_Times_description;
+                                        }
+                                    })
+                                </script>
+                            </div>
+                        </li>
+                        <li class="tm-4">
+                            <div class="history-cont">
+                                <h4>Roman Times</h4>
+                                <p id="roman"></p>
+                                <script>
+                                    fetch("main.json")
+                                    .then(response => response.json())
+                                    .then((data) => {
+                                        for(const history of data.history){
+                                        var output = document.getElementById("roman")
+                                        output.innerHTML = history.Roman_Times.Roman_Times_description;
+                                        }
+                                    })
+                                </script>
+                            </div>
+                        </li>
+                        <li class="tm-5">
+                             <div class="history-cont">
+                                <h4>Byzantine Times</h4>
+                                <p id="byzantine"></p>
+                                <script>
+                                    fetch("main.json")
+                                    .then(response => response.json())
+                                    .then((data) => {
+                                        for(const history of data.history){
+                                        var output = document.getElementById("byzantine")
+                                        output.innerHTML = history.Byzantine_Times.Byzantine_Times_description;
+                                        }
+                                    })
+                                </script>
+                            </div>
+                        </li>
+                        <li class="tm-6">
+                            <div class="history-cont">
+                                <h4>Venetocracy – Ottoman Reign</h4>
+                                <p id="venetocracy"></p>
+                                <script>
+                                    fetch("main.json")
+                                    .then(response => response.json())
+                                    .then((data) => {
+                                        for(const history of data.history){
+                                        var output = document.getElementById("venetocracy")
+                                        output.innerHTML = history.Venetocracy.Venetocracy_description;
+                                        }
+                                    })
+                                </script>
+                            </div>
+                        </li>
+                        <li class="tm-7">
+                            <div class="history-cont">
+                                <h4>The years prior to the Greek revolution</h4>
+                                <p id="greek-rev"></p>
+                                <script>
+                                    fetch("main.json")
+                                    .then(response => response.json())
+                                    .then((data) => {
+                                        for(const history of data.history){
+                                        var output = document.getElementById("greek-rev")
+                                        output.innerHTML = history.Pre_Greek_Revolution.Pre_Greek_Rev_description;
+                                        }
+                                    })
+                                </script>
+                            </div>
+                        </li>
+                        <li class="tm-8">
+                            <div class="history-cont">
+                                <h4>The struggle for liberation</h4>
+                                <p id="liberation"></p>
+                                <script>
+                                    fetch("main.json")
+                                    .then(response => response.json())
+                                    .then((data) => {
+                                        for(const history of data.history){
+                                        var output = document.getElementById("liberation")
+                                        output.innerHTML = history.Liberation.Liberation_description;
+                                        }
+                                    })
+                                </script>
+                            </div>
+                        </li>
+                        <li class="tm-9">
+                              <div class="history-cont">
+                                <h4>19th – 20th century</h4>
+                                <p id="nineteenth"></p>
+                                <script>
+                                    fetch("main.json")
+                                    .then(response => response.json())
+                                    .then((data) => {
+                                        for(const history of data.history){
+                                        var output = document.getElementById("nineteenth")
+                                        output.innerHTML = history.Nineteenth_forw.Nineteenth_forw_description;
+                                        }
+                                    })
+                                </script>
+                            </div>
+                        </li>
+                        <li class="tm-10">
+                            <div class="history-btm">
+                                <p>2020</p>
+                            </div>
+                        </li>
+                    </ul>        
+                </div>
+            </div>
+        </div>
+        <!-- history-part end -->
+
+        <!-- footer-area start -->
+        <footer class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-cont">
+                            <ul>
+                                <li><a href="#">Terms and Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Cookies Policy</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-cont">
+                            <ul>
+                                <li><a href="#">Subscribe to Newsletter</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-cont">
+                            <ul>
+                                <li>Contact Us</li>
+                                <li><img src="images/call.png" alt="">210 - 13123212</li>
+                                <li><a href="mailto: milos@island.com"><img src="images/mail.png" alt="">milos@island.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-part">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="copy-left">
+                                <img src="images/copy.png" alt="">
+                                <span>All Rights Reserved</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="copy-right text-right">
+                                <a href="#">
+                                    <img class="fb-img" src="images/facebook.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="images/instragram.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-area end -->
+
+        <!-- Fontawesome Script -->
+        <script src="https://kit.fontawesome.com/7749c9f08a.js"></script>
+        <script src="index.js">
+        </script>
+    </body>
+</html>
+

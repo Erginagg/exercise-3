@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!-- Meta setup -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="keywords" content="">
+        <meta name="decription" content="">
+        
+        <!-- Title -->
+        <title>Welcome</title>
+        
+        <!-- Fav Icon -->
+        <link rel="icon" href="images/favicon.ico" />   
+        <!-- Main StyleSheet -->
+        <link rel="stylesheet" href="style.css" />  
+
+    </head>
+    <body>
+
+       <!-- header-area start -->   
+        <header class="header-area">
+            <div class="container">
+                <div class="head-upper-log text-right">
+                   <a href="#">
+                        <img src="images/head-logo.png" alt="" class="img-fluid">
+                   </a>
+                </div>
+                <nav class="menu-area">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <a href="index.html">
+                                <img src="images/logo.png" alt="" class="img-fluid"/>
+                            </a>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="menu-item text-right">
+                                <ul>
+                                    <li><a href="index.html" id="active">Home</a></li>
+                                    <li><a href="history.html">History</a></li>
+                                    <li><a href="choices.html">Choices</a></li>
+                                    <li><a href="events.html">Events</a></li>             
+                                    <li><a href="contact.html">Contact</a></li>        
+                                </ul>
+                            </div>
+                        </div>
+                    </div>           
+                </nav>              
+            </div>
+        </header>    
+        <!-- header-area end -->    
+
+        <!-- contact-main area start -->
+        <main class="contact-main-area">
+            <div class="container">
+                <div class="contact-upper text-center">
+                    <h4>Contact Form</h4>
+                </div>
+                    <form id="form" action="#">
+                        <div class="cont-cnt">
+                            <input type="text" name="" id="namel"
+                             placeholder="Name">
+                             <span id="text"></span>
+                        </div>
+                    </form>
+                    <form id="form2" action="#">
+                        <div class="cont-cnt">
+                            <input type="text" name="" id="email"
+                             placeholder="Email" onkeyup="validation()">
+                             <span id="text"></span>
+                        </div>
+                    </form>
+                    <form id="form3" action="#">
+                        <div class="cont-cnt">
+                            <input type="text" name="" id="subject"
+                             placeholder="Subject">
+                             <span id="text"></span>
+                        </div>
+                    </form>
+                    <form id="form4" action="#">
+                        <div class="cont-cnt">
+                            <input type="text" name="" id="message"
+                             placeholder="Message">
+                             <span id="text"></span>
+                        </div>
+                    </form>           
+                    <div class="cust-ckbx">
+                        <label class="ccnt">I agree to the terms and conditions
+                            <input type="checkbox" id="check">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="subm">
+                    <input type="submit" value="Send" onclick="name_validation();subject_validation();message_validation();checkbox_validation();"> 
+                    </div>
+                </form>
+            </div>
+        </main>
+        <!-- contact-main area end -->      
+
+        <!-- footer-area start -->
+         <footer class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-cont">
+                            <ul>
+                                <li><a href="#">Terms and Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Cookies Policy</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-cont">
+                            <ul>
+                                <li><a href="#">Subscribe to Newsletter</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-cont">
+                            <ul>
+                                <li>Contact Us</li>
+                                <li><img src="images/call.png" alt="">210 - 13123212</li>
+                                <li><a href="mailto: milos@island.com"><img src="images/mail.png" alt="">milos@island.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-part">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="copy-left">
+                                <img src="images/copy.png" alt="">
+                                <span>All Rights Reserved</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="copy-right text-right">
+                                <a href="#">
+                                    <img class="fb-img" src="images/facebook.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="images/instragram.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-area end -->
+
+        <!-- Fontawesome Script -->
+        <script src="https://kit.fontawesome.com/7749c9f08a.js"></script>
+        <script src="index.js">
+        </script>
+    </body>
+</html>

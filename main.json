@@ -1,0 +1,30 @@
+{
+    "history": [
+    {
+        "Mythology":{
+            "Mythology_description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"
+        },
+        "Ancient_Times":{
+            "Ancient_Times_description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"
+        },
+        "Roman_Times":{
+            "Roman_Times_description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"
+        },
+        "Byzantine_Times":{
+            "Byzantine_Times_description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"
+        },
+        "Venetocracy":{
+            "Venetocracy_description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"
+        },
+        "Pre_Greek_Revolution":{
+            "Pre_Greek_Rev_description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"
+        },
+        "Liberation":{
+            "Liberation_description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"
+        },
+        "Nineteenth_forw":{
+            "Nineteenth_forw_description": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"
+        }
+    }
+    ]
+}
